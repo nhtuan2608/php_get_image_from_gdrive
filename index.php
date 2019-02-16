@@ -1,6 +1,24 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+// $APIKey = "";
+// function httpGet($url)
+// {
+//     $ch = curl_init();  
+ 
+//     curl_setopt($ch,CURLOPT_URL,$url);
+//     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+ 
+//     $output=curl_exec($ch);
+ 
+//     curl_close($ch);
+//     return $output;
+// }
+ 
+// $rs = httpGet("https://www.googleapis.com/drive/v3/files/13wb9AIg4P4rD8VtA1rHt9Ga08h8S1Iyi?key=".$APIKey);
+// echo $rs;
+
+
 if (php_sapi_name() != 'cli') {
     throw new Exception('This application must be run on the command line.');
 }
